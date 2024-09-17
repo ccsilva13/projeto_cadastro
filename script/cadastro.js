@@ -46,6 +46,6 @@ async function cadastroUsuario(){   //função assíncrona: permite executar tar
     }
 
     let respostaErro = await api.json();
-    console.log(respostaErro.data.errors.cpf_cnpj[0]);
+    alert(respostaErro.data.errors.cpf_cnpj[0]);
 
 }
